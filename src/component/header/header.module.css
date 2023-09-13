@@ -1,57 +1,54 @@
 .header {
-    position: relative;
-    top: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    height: 100%;
-    padding: 0px;
-    background-color: white;
+  position: fixed;
+  top: 10px;
+  display: flex;
+  align-items: top;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0px;
+  background-color: white;
 }
 
 .leftLogo {
-    position: relative;
-    left: 23%;
-    display: flex;
+  position: relative;
+  display: flex;
 }
 
 .homeBtn {
-    /* width: 50px;
+  /* width: 50px;
     height: 50px; */
-    border: 4px solid white;
-    /* border-radius: 50%; */
-    background-color: white;
+  border: 4px solid white;
+  /* border-radius: 50%; */
+  background-color: white;
 }
 
 .home {
-    width: 55px;
+  width: 55px;
 }
 
 .korean {
-    position: relative;
-    /* left: 80px; */
-    right: 10px;
-    font-size: 20px;
-    /* margin: 20px 0px 10px 0px; */
+  position: relative;
+  /* left: 80px; */
+  right: 10px;
+  font-size: 20px;
+  /* margin: 20px 0px 10px 0px; */
 }
-
-
 
 .rightLogo {
-    position: relative;
-    margin-top: 20px;
-    right: 23%;
-    width: 100px;
+  position: relative;
+  margin-top: 20px;
+  width: 90px;
+  display: inline-block;
+  background-color: white;
+  align-content: space-between;
 }
 
+.magnifier {
+  background-color: white;
+  border: none;
+}
 
-/* .magnifier {
-    position: relative;
-    right: 4vw;
-} */
-
-.mylogo {
-    position: relative;
-    left: 1vw;
+.notificationLogo {
+  background-color: white;
+  border: none;
 }

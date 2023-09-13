@@ -1,73 +1,70 @@
 .footer {
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    width: 100%;
-    height: 15%;
+  display: fixed;
+  justify-content: center;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 15%;
+  background-color: white;
 }
 
 .foot {
-    width: 50%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
-
-
 .spoonsor {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    /* top: 8% */
+  position: relative;
+  width: 100%;
+  height: 100%;
+  /* top: 8% */
 }
 
 .spoonBtn {
-    position: absolute;
-    width: 105px;
-    height: 70px;
-    border: 4px solid white;
-    border-radius: 50%;
-    background-color: white;
-    top: 0.5px;
-    left: 47%
+  position: absolute;
+  width: 105px;
+  height: 70px;
+  border: 4px solid white;
+  border-radius: 50%;
+  background-color: white;
+  top: 0.5px;
+  left: 47%;
 }
 
 .spoon {
-    position: absolute;
-    left: 13%;
-    /* right: 0px; */
-    top: 3px;
-    padding-right: 10%;
-    width: 70px;
+  position: absolute;
+  left: 13%;
+  /* right: 0px; */
+  top: 3px;
+  padding-right: 10%;
+  width: 70px;
 }
 
-
 .ask {
-    position: absolute;
-    width: 4%;
-    top: 37%;
-    left: 35%;
+  position: absolute;
+  width: 4%;
+  top: 37%;
+  left: 35%;
 }
 
 .myq {
-    position: absolute;
-    width: 4%;
-    top: 65%;
-    left: 35.8%;
-
+  position: absolute;
+  width: 4%;
+  top: 65%;
+  left: 35.8%;
 }
 
 .my {
-    position: absolute;
-    width: 3%;
-    top: 40%;
-    left: 65%
+  position: absolute;
+  width: 3%;
+  top: 40%;
+  left: 65%;
 }
 
 .myp {
-    position: absolute;
-    /* width: ; */
-    top: 65%;
-    left: 64.2%
+  position: absolute;
+  /* width: ; */
+  top: 65%;
+  left: 64.2%;
 }
