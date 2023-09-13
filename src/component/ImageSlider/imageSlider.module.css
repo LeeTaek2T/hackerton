@@ -1,0 +1,14 @@
+.imgDiv {
+    margin-top: 50px;
+}
+
+.ceterImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainImg {
+    width: 50%;
+    margin: auto;
+}
