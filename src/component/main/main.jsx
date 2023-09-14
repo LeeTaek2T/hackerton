@@ -18,32 +18,42 @@ const Main = () => {
         <Header></Header>
       </div>
       <ImageSlider></ImageSlider>
-      <div className={styles.middle}> {/*후원 구간*/}
-        <div className={styles.middleTitleDiv}> {/*후원 타이틀*/}
+      <div className={styles.middle}>
+        {' '}
+        {/*후원 구간*/}
+        <div className={styles.middleTitleDiv}>
+          {' '}
+          {/*후원 타이틀*/}
           <p className={styles.spoonsor}>상수우</p>
           <p className={styles.title}>님의 햇살을 기다리고 있어요!</p>
           <button className={styles.arrowBtn}>
             <img src={arrow} className={arrow}></img>
           </button>
         </div>
-        <div className={styles.children}> {/*후원대상 아이들*/}
-          <div className={styles.child}> {/*첫번째 아이 */}
+        <div className={styles.children}>
+          {' '}
+          {/*후원대상 아이들*/}
+          <div className={styles.child}>
+            {' '}
+            {/*첫번째 아이 */}
             <button className={styles.chBtn}>
               <img src={chOImg} className={styles.chImg}></img>
               <p className={styles.chP}>씩씩하게 치료...</p>
             </button>
             <p className={styles.chName}>김나현</p>
           </div>
-
-          <div className={styles.child}> {/*두번째 아이 */}
+          <div className={styles.child}>
+            {' '}
+            {/*두번째 아이 */}
             <button className={styles.chBtn}>
               <img src={chTImg} className={styles.chImg}></img>
               <p className={styles.chP}>구멍난 축구화...</p>
             </button>
             <p className={styles.chName}>이재찬</p>
           </div>
-
-          <div className={styles.child}> {/*세번째아이*/}
+          <div className={styles.child}>
+            {' '}
+            {/*세번째아이*/}
             <button className={styles.chBtn}>
               <img src={chThImg} className={styles.chImg}></img>
               <p className={styles.chP}>조금 느리지만...</p>
@@ -63,10 +73,10 @@ const Main = () => {
           <img src={reportImg} className={styles.reportImg}></img>
         </div>
       </div>
-      <div div className={styles.footerDiV} >
+      <div div className={styles.footerDiV}>
         <Footer></Footer>
-      </div >
-    </div >
+      </div>
+    </div>
   );
 };
 
