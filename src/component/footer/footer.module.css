@@ -9,62 +9,67 @@
   background-color: white;
 }
 
+.spoonsor {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
 .foot {
   width: 100%;
   height: 100%;
 }
 
-.spoonsor {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  /* top: 8% */
-}
-
 .spoonBtn {
   position: absolute;
-  width: 105px;
-  height: 70px;
   border: 4px solid white;
   border-radius: 50%;
   background-color: white;
-  top: 0.5px;
-  left: 47%;
+  left: 43%;
+  width: 16%;
+  height: 65%;
 }
 
 .spoon {
   position: absolute;
-  left: 13%;
-  /* right: 0px; */
-  top: 3px;
-  padding-right: 10%;
-  width: 70px;
+  width: 120%;
+  height: 100%;
+  right: 0%;
+  bottom: 5%;
+}
+
+.oneLogo {
+  position: absolute;
+  top: 40%;
+  left: 20%;
 }
 
 .ask {
-  position: absolute;
-  width: 4%;
-  top: 37%;
-  left: 35%;
+  width: 120%;
 }
 
 .myq {
+  margin: 0px;
   position: absolute;
-  width: 4%;
-  top: 65%;
-  left: 35.8%;
+  width: 100%;
+  top: 80%;
+  left: 15%;
+}
+
+.twoLogo {
+  position: absolute;
+  top: 43%;
+  right: 20%;
 }
 
 .my {
-  position: absolute;
-  width: 3%;
-  top: 40%;
-  left: 65%;
+  width: 125%;
 }
 
 .myp {
   position: absolute;
-  /* width: ; */
-  top: 65%;
-  left: 64.2%;
+  width: 400%;
+  top: 58%;
+  right: -225%;
 }

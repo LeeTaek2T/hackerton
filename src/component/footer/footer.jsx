@@ -7,14 +7,20 @@ const Footer = () => {
 
     return (
         <div className={styles.footer}>
-            <img src={foot} className={styles.foot}></img>
-            <button className={styles.spoonBtn}>
-                <img className={styles.spoon} src={spoon}></img>
-            </button>
-            <img src={ask} className={styles.ask}></img>
-            <p className={styles.myq}>문의</p>
-            <img src={my} className={styles.my}></img>
-            <p className={styles.myp}>나의 후원</p>
+            <div className={styles.spoonsor}>
+                <img src={foot} className={styles.foot}></img>
+                <button className={styles.spoonBtn}>
+                    <img className={styles.spoon} src={spoon}></img>
+                </button>
+            </div>
+            <div className={styles.oneLogo}>
+                <img src={ask} className={styles.ask}></img>
+                <p className={styles.myq}>문의</p>
+            </div>
+            <div className={styles.twoLogo}>
+                <img src={my} className={styles.my}></img>
+                <p className={styles.myp}>나의 후원</p>
+            </div>
         </div>
     )
 }
