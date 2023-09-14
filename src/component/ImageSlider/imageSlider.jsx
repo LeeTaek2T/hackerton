@@ -18,11 +18,13 @@ const ImageSlider = () => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
+    prevArrow: <></>, // 이전 버튼 숨김
+    nextArrow: <></>, // 다음 버튼 숨김
   };
 
   return (
     <div>
-      <Slider {...settings}>
+      <Slider {...settings} className={styles.slider}>
         <div className={styles.imgDiv}>
           <div className={styles.centerImg}>
             <img src={mainOne} className={styles.mainImg} alt="이미지 1" />

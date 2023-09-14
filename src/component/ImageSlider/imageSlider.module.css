@@ -1,6 +1,10 @@
-.imgDiv {
-    margin-top: 50px;
+.slider {
+    top: 50%;
+    margin-top: 18%;
+    margin-bottom: 10%;
 }
+
+.imgDiv {}
 
 .ceterImg {
     display: flex;
@@ -9,6 +13,8 @@
 }
 
 .mainImg {
-    width: 50%;
+    width: 100%;
     margin: auto;
+    height: 100%;
+
 }

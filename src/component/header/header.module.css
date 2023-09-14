@@ -1,5 +1,5 @@
 .header {
-    position: fixed;
+    position: absolute;
     top: 10px;
     display: flex;
     align-items: top;
@@ -17,6 +17,10 @@
 .homeBtn {
     border: 4px solid white;
     background-color: white;
+}
+
+.homeBtn:hover {
+    background-color: black;
 }
 
 .home {

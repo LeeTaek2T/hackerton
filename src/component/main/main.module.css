@@ -1,3 +1,88 @@
 body {
   overflow-x: hidden;
 }
+
+.main {
+  margin-top: 6%;
+}
+
+.middle {
+  background-color: #f8f8f8;
+  /* padding: 6.5% 0% 6.5% 0%; */
+  /* margin: 5% 0% 5% 0%;  */
+}
+
+.middleTitleDiv {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  position: relative;
+}
+
+.spoonsor {
+  font-size: larger;
+  font-style: italic;
+  font-weight: bold;
+  color: green;
+  margin-right: 1%;
+}
+
+.title {
+  font-size: large;
+  font-weight: bold;
+  line-height: 160%;
+}
+
+.arrowBtn {
+  padding-top: 1.5%;
+  background-color: #f8f8f8;
+  border: 1px solid #f8f8f8;
+}
+
+.children {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+}
+
+.chImg {
+  width: 100%;
+}
+
+.chBtn {
+  background-color: #f8f8f8;
+  border: 1px solid #f8f8f8;
+  /* width: 110%; */
+}
+
+.chP {
+  margin: 0px;
+}
+
+
+.chName {
+  margin-left: 6%;
+  margin-top: 0%;
+  color: #919090;
+}
+
+.reportDiv {
+  background-color: #CCFFD1;
+}
+
+.reportTitle {
+  text-align: center;
+  font-size: larger;
+  font-weight: bold;
+  padding: 2% 0% 4% 2%;
+  margin: 0%;
+}
+
+.reportCore {
+  position: relative;
+}
+
+.reportCoreNameDiv {
+  position: absolute;
+  display: flex;
+}

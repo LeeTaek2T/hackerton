@@ -1,5 +1,5 @@
 .footer {
-  display: fixed;
+  display: sticky;
   justify-content: center;
   position: absolute;
   bottom: 0px;
