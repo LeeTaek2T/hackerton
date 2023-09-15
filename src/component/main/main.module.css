@@ -15,8 +15,6 @@ body {
 
 .middle {
   background-color: #f8f8f8;
-  /* padding: 6.5% 0% 6.5% 0%; */
-  /* margin: 5% 0% 5% 0%;  */
 }
 
 .middleTitleDiv {
@@ -59,7 +57,6 @@ body {
 .chBtn {
   background-color: #f8f8f8;
   border: 1px solid #f8f8f8;
-  /* width: 110%; */
 }
 
 .chP {

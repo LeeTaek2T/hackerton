@@ -1,0 +1,145 @@
+body {
+  overflow-x: hidden;
+}
+
+.headerDiv {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.footerDiV {
+  position: fixed;
+  bottom: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 1000;
+}
+
+.HeadLineDiv {
+  background-color: white;
+  text-align: center;
+  margin-top: 10vh;
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+.MyProfile {
+  margin-left: 10vw;
+  margin-right: 10vw;
+  background-color: white;
+  width: 80vw;
+  height: 15vh;
+  align-items: center;
+  display: flex;
+  margin-bottom: 5vw;
+}
+.MyPhoto {
+  width: 14vh;
+  height: 14vh;
+  background-color: white;
+  border-radius: 50%;
+  border: 0.5px solid #373535;
+  display: inline-block;
+  top: 0%;
+  overflow: hidden;
+}
+.MyProfilePhoto {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.MyInfo {
+  width: 50%;
+  height: 100%;
+  background-color: white;
+  display: inline-block;
+  padding-left: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.MyName {
+  background-color: white;
+  height: 20%;
+  width: 100%;
+  margin-bottom: 3%;
+  display: inline-block;
+  font-size: 20px;
+  color: #1fb008;
+}
+.SponAmount {
+  background-color: white;
+  height: 15%;
+  width: 100%;
+  margin-bottom: 10%;
+  display: inline-block;
+  font-size: 12px;
+  color: black;
+}
+.ModifyInfo {
+  background-color: white;
+  height: 30px;
+  width: 100px;
+  font-size: 14px;
+  padding: 0;
+  border: 0.5px #5f5f5f solid;
+}
+hr {
+  width: 80vw;
+}
+
+.ListHeadTxt {
+  margin-left: 10vw;
+  margin-top: 18px;
+  font-size: 13px;
+  margin-bottom: 24px;
+}
+
+.Sponsored {
+  width: 80vw;
+  height: 136px;
+  background-color: white;
+  margin-left: 10vw;
+  align-items: center;
+  display: flex;
+}
+.BetweenSponsored {
+  margin-top: 14px;
+  margin-bottom: 14px;
+  width: 60vw;
+}
+.SponsoredImgSpace {
+  width: 108px;
+  height: 136px;
+  background-color: white;
+  display: inline-block;
+  top: 0%;
+  overflow: hidden;
+  margin-right: 17px;
+}
+.SponsoredPhoto {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.SponsoredInfo {
+  width: 162px;
+  height: 45px;
+  background-color: white;
+  display: inline-block;
+  font-size: 13px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.LetterButton {
+  width: 63px;
+  height: 26px;
+  border: 0.5px solid #979797;
+  background-color: white;
+  margin-top: 24px;
+  font-size: 12px;
+}
