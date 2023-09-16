@@ -93,9 +93,9 @@ body {
 .reportCoreNameDiv {
   position: absolute;
   display: flex;
-  bottom: 63%;
+  bottom: 66%;
   width: 100%;
-
+  right: 32%;
 }
 
 .reportCoreName {

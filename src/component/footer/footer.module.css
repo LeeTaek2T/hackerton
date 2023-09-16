@@ -54,16 +54,17 @@
   position: absolute;
   width: 100%;
   top: 80%;
-  left: 15%;
+  left: 7%;
 }
 
 .twoLogo {
   position: absolute;
   top: 43%;
-  right: 20%;
+  right: 18%;
 }
 
 .my {
+
   width: 125%;
 }
 
@@ -71,5 +72,5 @@
   position: absolute;
   width: 400%;
   top: 58%;
-  right: -225%;
+  right: -170%;
 }
