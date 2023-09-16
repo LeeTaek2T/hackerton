@@ -5,13 +5,19 @@ import notificationLogo from '../../source/notificationLogo.png';
 import home from '../../source/spoon1.png';
 
 const Header = () => {
+    const navigate = useNavigate();
+    const toHome = () => {
+        navigate({
+            pathname: '/'
+        })
+    }
     return (
         <div className={styles.header}>
             <div className={styles.leftLogo}>
-                <button className={styles.homeBtn}>
+                <button className={styles.homeBtn} onClick={toHome}>
                     <img src={home} className={styles.home}></img>
                 </button>
-                <p className={styles.korean}>늘봄</p>
+                <p className={styles.korean} onClick={toHome}>늘봄</p>
             </div>
             <div className={styles.rightLogo}>
                 <button className={styles.magnifier}>
