@@ -1,3 +1,14 @@
+body {
+  overflow-x: hidden;
+}
+
+.headerDiv {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
 .main {
   margin-top: 6%;
   overflow-y: scroll;
@@ -6,8 +17,6 @@
 
 .middle {
   background-color: #f8f8f8;
-  /* padding: 6.5% 0% 6.5% 0%; */
-  /* margin: 5% 0% 5% 0%;  */
 }
 
 .middleTitleDiv {
@@ -50,13 +59,11 @@
 .chBtn {
   background-color: #f8f8f8;
   border: 1px solid #f8f8f8;
-  /* width: 110%; */
 }
 
 .chP {
   margin: 0px;
 }
-
 
 .chName {
   margin-left: 6%;
@@ -106,4 +113,12 @@
 
 .reportImg {
   width: 100%;
+}
+
+.footerDiV {
+  position: fixed;
+  bottom: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 1000;
 }

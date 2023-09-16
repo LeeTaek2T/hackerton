@@ -1,5 +1,8 @@
-import Main from './component/main/main';
 import Sub1 from './component/sub01/sub1';
+import './App.module.css';
+import Header from './component/header/header';
+import Footer from './component/footer/footer';
+import Main from './component/main/main';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import styles from './App.module.css';
 
