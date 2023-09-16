@@ -20,9 +20,7 @@ const Main = () => {
   }
   return (
     <div className={styles.main}>
-      <div className={styles.headerDiv}>
-        <Header></Header>
-      </div>
+      <Header></Header>
       <ImageSlider></ImageSlider>
       <div className={styles.middle}>
         {' '}
@@ -78,9 +76,7 @@ const Main = () => {
           <img src={reportImg} className={styles.reportImg}></img>
         </div>
       </div>
-      <div div className={styles.footerDiV}>
-        <Footer></Footer>
-      </div>
+      <Footer></Footer>
     </div>
   );
 };
