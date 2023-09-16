@@ -11,6 +11,8 @@ body {
 
 .main {
   margin-top: 6%;
+  overflow-y: scroll;
+  /* height: 80vh; */
 }
 
 .middle {
@@ -70,7 +72,8 @@ body {
 }
 
 .reportDiv {
-  background-color: #ccffd1;
+  background-color: #CCFFD1;
+  padding-bottom: 12%;
 }
 
 .reportTitle {
@@ -78,16 +81,38 @@ body {
   font-size: larger;
   font-weight: bold;
   padding: 2% 0% 4% 2%;
-  margin: 0%;
+  margin: 3.2% 0% 0% 0%;
 }
 
 .reportCore {
   position: relative;
+  width: 100%;
+
 }
 
 .reportCoreNameDiv {
   position: absolute;
   display: flex;
+  bottom: 63%;
+  width: 100%;
+
+}
+
+.reportCoreName {
+  font-size: medium;
+  color: white;
+}
+
+.reportCoreName {
+  width: 100%;
+  margin-left: 3%;
+  font-size: large;
+  color: white;
+  font-weight: bold;
+}
+
+.reportImg {
+  width: 100%;
 }
 
 .footerDiV {

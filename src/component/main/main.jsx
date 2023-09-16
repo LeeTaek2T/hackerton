@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, useNavigate } from 'react-router-dom';
 import Header from '../header/header';
 import { Carousel } from 'react-responsive-carousel';
 
@@ -12,6 +12,12 @@ import chThImg from '../../source/main4.png';
 import reportImg from '../../source/main5.png';
 
 const Main = () => {
+  const navigate = useNavigate();
+  const toSubOne = () => {
+    navigate({
+      pathname: '/sub1m1'
+    });
+  }
   return (
     <div className={styles.main}>
       <div className={styles.headerDiv}>
@@ -26,7 +32,7 @@ const Main = () => {
           {/*후원 타이틀*/}
           <p className={styles.spoonsor}>상수우</p>
           <p className={styles.title}>님의 햇살을 기다리고 있어요!</p>
-          <button className={styles.arrowBtn}>
+          <button className={styles.arrowBtn} onClick={toSubOne}>
             <img src={arrow} className={arrow}></img>
           </button>
         </div>
@@ -67,8 +73,7 @@ const Main = () => {
         <p className={styles.reportTitle}>8월의 새싹</p>
         <div className={styles.reportCore}>
           <div className={styles.reportCoreNameDiv}>
-            <p className={styles.reportCoreName}>8월 활동</p>
-            <p className={styles.reportCoreName}>보고서</p>
+            <p className={styles.reportCoreName}>8월 활동 보고서</p>
           </div>
           <img src={reportImg} className={styles.reportImg}></img>
         </div>

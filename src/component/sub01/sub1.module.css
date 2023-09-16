@@ -1,0 +1,90 @@
+.sub1Main {
+    height: 100%;
+}
+
+.middle {
+    margin-top: 17%;
+}
+
+.middleTitleDiv {
+    /* background-color: #CBFFA3; */
+    display: flex;
+    /* justify-content: center; */
+    align-content: center;
+}
+
+.backArrow {
+    border: 0px;
+    background-color: white;
+    margin: 0% 10% 0% 8%;
+}
+
+.oneTitles {
+    display: flex;
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+}
+
+.oneTitle {
+    font-size: large;
+    font-weight: bold;
+    color: #41830D;
+    margin: 0% 0% 0% 0%;
+}
+
+.twoTitle {
+    font-size: medium;
+    margin: 0% 0% 0% 0%;
+}
+
+.filterDiv {
+    display: flex;
+    background-color: #CBFFA3;
+    justify-content: center;
+    align-content: center;
+    margin: 4% 0% 0% 0%;
+}
+
+.fp {
+    margin-left: 6%;
+    font-weight: bolder;
+}
+
+.bottomArrowBtn {
+    border: 0px;
+    background-color: #CBFFA3;
+    margin: 0% 0% 0% 0%;
+}
+
+.child {
+    background-color: #F8F8F8;
+    display: flex;
+    margin: 4% 0% 0% 0%;
+}
+
+.childBtn {
+    background-color: #F8F8F8;
+    border: 0px;
+    padding: 5% 0% 5% 0%;
+    margin: 0% 5% 0% 5%;
+
+}
+
+.childIntroduce {
+    margin: 5% 5% 5% 2%;
+}
+
+.childName {
+    margin: 0px;
+    text-align: start;
+    font-size: medium;
+    font-weight: bold;
+}
+
+.detail {
+    margin: 0px;
+    font-size: smaller;
+    color: #8A8A8A;
+    text-align: start;
+}
