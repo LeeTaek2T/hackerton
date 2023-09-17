@@ -3,9 +3,8 @@ import Footer from '../footer/footer';
 import styles from './main.module.css';
 import myProfilePhoto from '../../source/tree.jpg';
 import sponsored1 from '../../source/Sponsored1.jpg';
-import sponsored2 from '../../source/Sponsored2.jpg';
 
-const Main = () => {
+const Sub03_1 = () => {
   return (
     <div className={styles.main}>
       <div className={styles.headerDiv}>
@@ -55,4 +54,4 @@ const Main = () => {
   );
 };
 
-export default Main;
+export default Sub03_1;
