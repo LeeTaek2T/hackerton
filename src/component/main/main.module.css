@@ -10,9 +10,9 @@ body {
 }
 
 .main {
-  margin-top: 6%;
+  /* margin-top: 6%; */
   overflow-y: scroll;
-  /* height: 80vh; */
+  height: auto;
 }
 
 .middle {
@@ -113,12 +113,4 @@ body {
 
 .reportImg {
   width: 100%;
-}
-
-.footerDiV {
-  position: fixed;
-  bottom: 0;
-  height: 100vh;
-  width: 100%;
-  z-index: 1000;
 }

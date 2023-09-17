@@ -13,9 +13,14 @@ import reportImg from '../../source/main5.png';
 
 const Main = () => {
   const navigate = useNavigate();
-  const toSubOne = () => {
+  const toSubOne_one = () => {
     navigate({
       pathname: '/sub1m1'
+    });
+  }
+  const toSubOne_two = () => {
+    navigate({
+      pathname: '/sub1m2'
     });
   }
   return (
@@ -30,7 +35,7 @@ const Main = () => {
           {/*후원 타이틀*/}
           <p className={styles.spoonsor}>상수우</p>
           <p className={styles.title}>님의 햇살을 기다리고 있어요!</p>
-          <button className={styles.arrowBtn} onClick={toSubOne}>
+          <button className={styles.arrowBtn} onClick={toSubOne_one}>
             <img src={arrow} className={arrow}></img>
           </button>
         </div>

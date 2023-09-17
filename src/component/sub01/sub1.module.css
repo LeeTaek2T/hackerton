@@ -1,22 +1,21 @@
 .sub1Main {
-    height: 100%;
+    overflow-y: scroll;
+    height: 80%;
+    padding-top: 18%;
+    padding-bottom: 30%;
 }
 
-.middle {
-    margin-top: 17%;
-}
 
 .middleTitleDiv {
-    /* background-color: #CBFFA3; */
+    position: relative;
     display: flex;
-    /* justify-content: center; */
     align-content: center;
 }
 
 .backArrow {
     border: 0px;
     background-color: white;
-    margin: 0% 10% 0% 8%;
+    margin: 0% 8% 0% 7%;
 }
 
 .oneTitles {
@@ -38,6 +37,7 @@
     margin: 0% 0% 0% 0%;
 }
 
+/* ---------필터버튼 안눌렀을 때 */
 .filterDiv {
     display: flex;
     background-color: #CBFFA3;
@@ -57,34 +57,105 @@
     margin: 0% 0% 0% 0%;
 }
 
-.child {
-    background-color: #F8F8F8;
-    display: flex;
+.details {
+    background-color: white;
     margin: 4% 0% 0% 0%;
 }
 
-.childBtn {
-    background-color: #F8F8F8;
-    border: 0px;
-    padding: 5% 0% 5% 0%;
-    margin: 0% 5% 0% 5%;
-
-}
-
-.childIntroduce {
-    margin: 5% 5% 5% 2%;
-}
-
-.childName {
-    margin: 0px;
-    text-align: start;
-    font-size: medium;
-    font-weight: bold;
-}
-
 .detail {
-    margin: 0px;
-    font-size: smaller;
-    color: #8A8A8A;
-    text-align: start;
+    margin: 30% 0%;
+}
+
+/* ---------필터 버튼 눌렀을때 */
+.filterBack {
+    background-color: #CBFFA3;
+    padding-bottom: 4%;
+}
+
+.selectfilterDiv {
+    display: flex;
+    background-color: #CBFFA3;
+    justify-content: center;
+    align-content: center;
+    margin: 4% 0% 0% 0%;
+}
+
+.selectfp {
+    margin: 4% 0% 0% 6%;
+    font-weight: bolder;
+}
+
+.selectbottomArrowBtn {
+    border: 0px;
+    background-color: #CBFFA3;
+    margin: 4% 0% 0% 0%;
+}
+
+.filterDetailDiv {
+    background-color: #E9FFE1;
+    width: 88%;
+    margin: auto;
+}
+
+.detailTitle {
+    display: flex;
+    /* align-content: start;
+    justify-content: start;
+    justify-self: start; */
+    /* justify-items: start; */
+    padding-top: 4%;
+    margin: 4% 0%;
+}
+
+.detailP {
+    margin: 0% 7%;
+    font-weight: bold;
+    font-size: large;
+
+}
+
+.detailPLong {
+    margin: 0% 0% 0% 4.8%;
+    font-weight: bold;
+    font-size: large;
+    width: 20%;
+}
+
+.sort {
+    width: 75%;
+    /* display: flex; */
+}
+
+
+.sex {
+    background-color: white;
+    border: 1px black solid;
+    margin: 0px 2%;
+    border-radius: 42.5%;
+    padding: 1% 2%;
+    font-size: small;
+}
+
+.age {
+    background-color: white;
+    border: 1px black solid;
+    border-radius: 42.5%;
+    margin: 0px 2%;
+    padding: 1% 2%;
+    font-size: small;
+}
+
+.conditions {
+    display: flex;
+    justify-content: space-around;
+}
+
+.condition {
+    background-color: white;
+    border: 1px black solid;
+    font-size: small;
+    border-radius: 42.5%;
+    padding: 1% 1%;
+    margin: 1% 1% 3% 1%;
+
 }
