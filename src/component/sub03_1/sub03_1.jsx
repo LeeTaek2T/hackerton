@@ -1,6 +1,6 @@
 import Header from '../header/header';
 import Footer from '../footer/footer';
-import styles from './main.module.css';
+import styles from './sub03_1.module.css';
 import myProfilePhoto from '../../source/tree.jpg';
 import sponsored1 from '../../source/Sponsored1.jpg';
 
@@ -9,7 +9,7 @@ const Sub03_1 = () => {
     <div className={styles.main}>
       <div className={styles.headerDiv}>
         <Header></Header>
-      </div>
+      </div>/
       <div className={styles.HeadLineDiv}>
         <b>나의 후원</b>
       </div>

@@ -15,6 +15,8 @@ const Sub2 = () => {
         });
     }
 
+
+
     return (
         <div>
             <Header></Header>
@@ -46,12 +48,12 @@ const Sub2 = () => {
                                 재찬이는 특출난 재능과 꿈에 대한 열정이 있음에도 불구하고 경제적인 문제로로 인해 적절한 지원을 받지 못하고 있습니다. 비록 어려운 환경일지라도, 재찬이가 아무런 걱정 없이 축구를 할 수 있도록 여러분의 관심과 응원이 필요합니다.
                             </p>
                         </div>
-
-
                     </div>
                 </div>
             </div>
-            <Footer></Footer>
+            <div className={styles.spoon}>
+                <button className={styles.spoonBtn} >후원하기</button>
+            </div>
         </div>
     );
 }
