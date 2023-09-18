@@ -7,9 +7,11 @@ import { useNavigate } from 'react-router-dom';
 
 const Footer = () => {
   const movePage = useNavigate();
-
-  function goSub03_1() {
-    movePage('../sub03_1/sub03_1');
+  const navigate = useNavigate();
+  const toSubThree_one = () => {
+    navigate({
+      pathname: '/sub03_1'
+    });
   }
   return (
     <div className={styles.footer}>
@@ -24,10 +26,10 @@ const Footer = () => {
         <p className={styles.myq}>문의</p>
       </div>
       <div className={styles.twoLogo}>
-        <button onClick={goSub03_1}>
+        <button onClick={toSubThree_one} className={styles.myBtn}>
           <img src={my} className={styles.my}></img>
-          <p className={styles.myp}>나의 후원</p>
         </button>
+        <p className={styles.myp}>나의 후원</p>
       </div>
     </div>
   );
