@@ -72,7 +72,7 @@ body {
 }
 
 .reportDiv {
-  background-color: #CCFFD1;
+  background-color: #ccffd1;
   padding-bottom: 12%;
 }
 
@@ -87,7 +87,6 @@ body {
 .reportCore {
   position: relative;
   width: 100%;
-
 }
 
 .reportCoreNameDiv {

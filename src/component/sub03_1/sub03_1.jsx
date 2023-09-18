@@ -9,7 +9,8 @@ const Sub03_1 = () => {
     <div className={styles.main}>
       <div className={styles.headerDiv}>
         <Header></Header>
-      </div>/
+      </div>
+      /
       <div className={styles.HeadLineDiv}>
         <b>나의 후원</b>
       </div>
@@ -36,13 +37,13 @@ const Sub03_1 = () => {
           <img src={sponsored1} className={styles.SponsoredPhoto} />
         </div>
         <div className={styles.SponsoredInfo}>
-          <div>
+          <div className={styles.InfoDiv}>
             <b>오수연</b>
             <br />
             후원시작일 : 20203.07.02.
             <br />월 후원금액 : 20,000원
           </div>
-          <button className={styles.LetterButton}>편지함</button>
+          <button className={styles.LetterButton}>후원 변경</button>
         </div>
       </div>
       <hr className={styles.BetweenSponsored} />

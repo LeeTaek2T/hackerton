@@ -136,10 +136,16 @@ hr {
   justify-content: center;
 }
 .LetterButton {
-  width: 63px;
-  height: 26px;
+  width: 70px;
+  height: 30px;
   border: 0.5px solid #979797;
   background-color: white;
   margin-top: 24px;
   font-size: 12px;
+}
+
+.InfoDiv {
+  background-color: white;
+  vertical-align: middle;
+  text-align: left;
 }
