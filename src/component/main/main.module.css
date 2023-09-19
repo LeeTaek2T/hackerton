@@ -10,7 +10,6 @@ body {
 }
 
 .main {
-  /* margin-top: 6%; */
   overflow-y: scroll;
   height: auto;
 }

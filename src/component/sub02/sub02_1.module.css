@@ -1,0 +1,158 @@
+.headerDiv {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+.Headline {
+  background-color: white;
+  padding-top: 90px;
+  font-size: 20px;
+}
+
+.DonateFrom {
+  display: flex;
+  margin-top: 30px;
+  justify-content: center;
+}
+.FromRadio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 30px;
+  font-size: 12px;
+  border: 0.5px solid black;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  margin: -0.5px;
+}
+
+.FromRadioInput {
+  display: none;
+}
+
+/* 체크된 상태일 때 스타일 변경 */
+.FromRadioInput:checked + .FromRadio {
+  background-color: green;
+  color: white;
+}
+
+/* 라벨과 입력 요소 간 간격 설정 */
+label {
+  margin-right: 10px;
+}
+
+.DonateWhen {
+  margin-bottom: 3vh;
+  font-size: 15px;
+  display: flex;
+  flex-direction: row; /* 세로 방향으로 요소들을 배치 */
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 20vw;
+  margin-right: 20vw;
+}
+
+.Date {
+  width: 77px;
+  height: 27px;
+  border-radius: 0;
+  text-align: center;
+  border: none;
+  background-color: #f0f0f0;
+  margin-right: 10px;
+}
+
+.txt {
+  display: inline-block;
+}
+
+hr {
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+}
+
+.DonateHow {
+  display: flex;
+  justify-content: center; /* 가로 중앙 정렬 */
+  margin-top: 30px;
+  margin-left: 15vw;
+  margin-right: 15vw;
+  margin-bottom: 3vh;
+}
+
+.HowRadio {
+  font-size: 15px;
+}
+input.HowRadioInput,
+progress {
+  accent-color: #61d307;
+}
+.BankInfo {
+  font-size: 15px;
+}
+.Bank {
+  width: 205px;
+  height: 26px;
+  border: 0px;
+  border-radius: 0;
+  background-color: #f0f0f0;
+  font-size: 15px;
+  margin-bottom: 2vh;
+}
+
+select option[value=''][disabled] {
+  display: none;
+}
+
+.CheckList {
+  margin: 5vw;
+  margin-top: 7vh;
+  padding: 3vh;
+  font-size: 12px;
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+}
+
+.CheckList {
+  margin: 5vw;
+  margin-top: 7vh;
+  padding: 3vh;
+  font-size: 12px;
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+}
+
+.CheckList div {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.CheckList input[type='checkbox'] {
+  margin-right: 10px;
+}
+
+.CheckList label {
+  white-space: pre-line; /* 줄 바꿈 허용 */
+  text-align: left; /* 모든 줄의 첫 글자를 좌측 정렬 */
+}
+
+.ListHr {
+  margin-top: 0.5vh;
+  margin-bottom: 1vh;
+  width: 90%;
+}
+
+.CompBtn {
+  margin: 2vh 0 5vh 0;
+  width: 103px;
+  height: 43px;
+  background-color: #73dd20;
+  color: white;
+  font-size: 20px;
+  border: 0;
+}
