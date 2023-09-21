@@ -1,0 +1,32 @@
+.main {
+  overflow-y: hidden;
+}
+.mainImgSpace {
+  background-color: white;
+  width: 80vw;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  margin-top: 25vh;
+  margin-left: 10vw;
+}
+
+.mainImg {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: fill;
+}
+
+.thxMsg {
+  font-size: 16px;
+}
+
+.toHomeBtn {
+  margin-top: 10vh;
+  width: 103px;
+  height: 43px;
+  font-size: 18px;
+  border: none;
+  background-color: #73dd20;
+  color: white;
+}

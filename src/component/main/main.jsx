@@ -15,14 +15,14 @@ const Main = () => {
   const navigate = useNavigate();
   const toSubOne_one = () => {
     navigate({
-      pathname: '/sub1m1'
+      pathname: '/sub1m1',
     });
-  }
+  };
   const toSubOne_two = () => {
     navigate({
-      pathname: '/sub1m2'
+      pathname: '/sub1m2',
     });
-  }
+  };
   return (
     <div className={styles.main}>
       <Header></Header>
