@@ -1,13 +1,11 @@
 import Header from '../header/header';
 import styles from './sub02_1.module.css';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import axios from 'axios';
-import { useLocation } from 'react-router-dom';
 
 const Sub02_1 = () => {
   const navigate = useNavigate();
-  const location = useLocation();
-  const index = 11;
+  const { id } = useParams();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -22,11 +20,17 @@ const Sub02_1 = () => {
       return;
     }
 
-    // API URL을 업데이트하고 메서드를 PUT으로 변경합니다.
-    const apiUrl = `api/donators/1/benefs/${index}/addDonatee?money=${howmuch}`;
+    // 현재 경로에서 "/sub02_1" 부분을 제거합니다.
+    const currentPathname = window.location.pathname.replace(
+      `/sub02_1/${id}`,
+      ''
+    );
+
+    // API URL을 구성합니다.
+    const apiUrl = `${currentPathname}/api/donators/1/benefs/${id}/addDonatee?money=${howmuch}`;
 
     try {
-      const response = await axios.put(apiUrl); // 여기를 axios.put으로 변경
+      const response = await axios.put(apiUrl);
 
       if (response.status === 200) {
         navigate('/sub02_2');

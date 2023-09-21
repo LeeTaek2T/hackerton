@@ -15,7 +15,7 @@ const Sub2 = () => {
   };
   const toSubTwo_one = () => {
     navigate({
-      pathname: '/sub02_1',
+      pathname: `/sub02_1/${childData.id}`,
     });
   };
   const location = useLocation();
