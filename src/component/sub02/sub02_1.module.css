@@ -156,3 +156,9 @@ select option[value=''][disabled] {
   font-size: 20px;
   border: 0;
 }
+
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
