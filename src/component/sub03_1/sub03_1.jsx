@@ -10,7 +10,6 @@ const Sub03_1 = () => {
       <div className={styles.headerDiv}>
         <Header></Header>
       </div>
-      /
       <div className={styles.HeadLineDiv}>
         <b>나의 후원</b>
       </div>
