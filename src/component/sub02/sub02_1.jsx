@@ -1,29 +1,43 @@
 import Header from '../header/header';
 import styles from './sub02_1.module.css';
 import { useNavigate } from 'react-router-dom';
+import axios from 'axios';
+import { useLocation } from 'react-router-dom';
 
 const Sub02_1 = () => {
   const navigate = useNavigate();
+  const location = useLocation();
+  const index = 11;
 
-  const handleSubmit = (e) => {
-    e.preventDefault(); // 기본 제출 동작을 중단합니다.
+  const handleSubmit = async (e) => {
+    e.preventDefault();
 
-    // 필수 필드를 여기에서 확인하고 필수 조건을 충족하지 않으면 submit을 중단할 수 있습니다.
     const form = e.target;
     const accountNum = form.querySelector('#accountNum').value;
     const donator = form.querySelector('#donator').value;
+    const howmuch = form.querySelector('#howmuch').value;
 
-    if (!accountNum || !donator) {
-      alert('계좌번호와 예금주를 모두 입력해주세요.');
-      return; // submit 중단
+    if (!accountNum || !donator || !howmuch) {
+      alert('계좌번호, 예금주, 후원 금액을 모두 입력해주세요.');
+      return;
     }
 
-    // 필수 조건이 충족되면 다음 페이지로 이동합니다.
-    navigate({
-      pathname: '/sub02_2',
-    });
-  };
+    // API URL을 업데이트하고 메서드를 PUT으로 변경합니다.
+    const apiUrl = `api/donators/1/benefs/${index}/addDonatee?money=${howmuch}`;
 
+    try {
+      const response = await axios.put(apiUrl); // 여기를 axios.put으로 변경
+
+      if (response.status === 200) {
+        navigate('/sub02_2');
+      } else {
+        alert('API 호출 실패');
+      }
+    } catch (error) {
+      console.error('API 호출 오류:', error);
+      alert('API 호출 오류');
+    }
+  };
   return (
     <div className={styles.main}>
       <Header></Header>
@@ -40,7 +54,6 @@ const Sub02_1 = () => {
               name="from"
               id="indi"
               value="indi"
-              checked
             />
             <label className={styles.FromRadio} htmlFor="indi">
               개인
@@ -82,7 +95,14 @@ const Sub02_1 = () => {
             <div className={styles.txt}>후원 금액</div>
             <div>
               <label htmlFor="howmuch"></label>
-              <input required className={styles.Date} type="number" />원
+              <input
+                required
+                className={styles.Date}
+                type="number"
+                name="howmuch"
+                id="howmuch"
+              />
+              원
             </div>
           </div>
           <hr />
