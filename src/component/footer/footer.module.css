@@ -39,10 +39,18 @@
   bottom: 5%;
 }
 
+.spoonP {
+  position: absolute;
+  top: 60%;
+  left: 45%;
+  font-size: smaller;
+  font-weight: bold;
+}
+
 .oneLogo {
   position: absolute;
   top: 40%;
-  left: 20%;
+  left: 16%;
 }
 
 .ask {
@@ -55,12 +63,13 @@
   width: 100%;
   top: 80%;
   left: 7%;
+  font-weight: bold;
 }
 
 .twoLogo {
   position: absolute;
   top: 43%;
-  right: 18%;
+  right: 16.5%;
 }
 
 .myBtn {
@@ -77,4 +86,6 @@
   width: 400%;
   top: 58%;
   right: -170%;
+  font-weight: bold;
+
 }
