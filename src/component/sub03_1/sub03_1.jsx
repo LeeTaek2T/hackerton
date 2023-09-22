@@ -20,15 +20,18 @@ const Sub03_1 = () => {
           ? response.data
           : [response.data];
         responseDataArray.forEach((item, index) => {
-          testMoney += item.money;
-          console.log(item.money)
-          console.log(`money : ${money}`)
 
-          const URLs = [
-            'subOne_1',
-            'subOne_5',
-          ]
-          item.imgOne = URLs[index % URLs.length]; // 이미지 URL을 순환하도록 설정
+          if (typeof item === 'object') { // 객체인 경우에만 처리
+            testMoney += item.money;
+            console.log(item.money);
+            console.log(`money : ${money}`);
+
+            const URLs = [
+              'subOne_1',
+              'subOne_5',
+            ]
+            item.imgOne = URLs[index % URLs.length]; // 이미지 URL을 순환하도록 설정
+          }
         })
         setMoney(testMoney);
         setDonatees(responseDataArray);
