@@ -50,12 +50,9 @@ const Sub03_1 = () => {
         </div>
         <div className={styles.MyInfo}>
           <div className={styles.MyName}>
-            <b>상수우</b>
+            <b>{name}</b> {/* Use the name variable */}
           </div>
           <div className={styles.SponAmount}>{`누적후원금 ${money}원`}</div>
-          <button className={styles.ModifyInfo}>
-            <b>회원정보 수정</b>
-          </button>
         </div>
       </div>
       <hr />
@@ -67,7 +64,6 @@ const Sub03_1 = () => {
           <SpoonedChild child={child}></SpoonedChild>
         ))
       }
-
       <div className={styles.footerDiV} >
         <Footer></Footer>
       </div>
