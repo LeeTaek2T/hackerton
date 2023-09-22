@@ -20,6 +20,7 @@ const Footer = () => {
         <button className={styles.spoonBtn}>
           <img className={styles.spoon} src={spoon}></img>
         </button>
+        <p className={styles.spoonP}>후원하기</p>
       </div>
       <div className={styles.oneLogo}>
         <img src={ask} className={styles.ask}></img>

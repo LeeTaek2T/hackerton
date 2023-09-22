@@ -6,6 +6,7 @@ import Footer from '../footer/footer';
 import leftArrow from '../../source/leftArrow.png';
 import DetailImageSlider from '../detailImageSlider/detailImageSilder';
 
+
 const Sub2 = () => {
   const navigate = useNavigate();
   const toSubOne_one = () => {
@@ -20,7 +21,6 @@ const Sub2 = () => {
   };
   const location = useLocation();
   const childData = location.state.childData;
-
   return (
     <div>
       <Header />
@@ -31,7 +31,7 @@ const Sub2 = () => {
           </button>
           <p className={styles.middleTitle}>상세 페이지</p>
         </div>
-        <DetailImageSlider />
+        <DetailImageSlider imgData={childData.imgTwo} />
         <div className={styles.details}>
           <div className={styles.detail}>
             <p className={styles.detailTitle}>{childData.STOne}</p>

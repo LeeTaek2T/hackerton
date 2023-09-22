@@ -2,32 +2,39 @@ import Header from '../header/header';
 import Footer from '../footer/footer';
 import styles from './sub03_1.module.css';
 import myProfilePhoto from '../../source/tree.jpg';
-import sponsored1 from '../../source/Sponsored1.jpg';
-import React, { useEffect, useState } from 'react';
+// import sponsored1 from '  ../../source/Sponsored1.jpg';
+import { useEffect, useState } from 'react';
 import axios from 'axios';
+import SpoonedChild from './spoonedChild';
 
 const Sub03_1 = () => {
-  const [money, setMoney] = useState(0); // money 상태 변수 초기값 설정
-  const [name, setName] = useState(''); // name 상태 변수 초기값 설정
-
+  const [donatees, setDonatees] = useState([]);
+  const [money, setMoney] = useState(0);
+  let testMoney = 0;
   useEffect(() => {
-    // API 주소
-    const apiUrl = 'api/donators/1';
-
-    // API에서 데이터 가져오기
     axios
-      .get(apiUrl)
+      .get('/api/donators/1/donatees')
       .then((response) => {
-        // API 응답에서 money 변수 값 추출
-        const moneyValue = response.data.money;
-        const nameValue = response.data.name; // Extract name from API response
-        setMoney(moneyValue); // 상태 변수 업데이트
-        setName(nameValue); // 상태 변수 업데이트
+        // setDonatees(response.data);
+        const responseDataArray = Array.isArray(response.data)
+          ? response.data
+          : [response.data];
+        responseDataArray.forEach((item, index) => {
+          testMoney += item.money;
+          console.log(item.money)
+          console.log(`money : ${money}`)
+
+          const URLs = [
+            'subOne_1',
+            'subOne_5',
+          ]
+          item.imgOne = URLs[index % URLs.length]; // 이미지 URL을 순환하도록 설정
+        })
+        setMoney(testMoney);
+        setDonatees(responseDataArray);
       })
-      .catch((error) => {
-        console.error('API 요청 중 오류 발생:', error);
-      });
   }, []);
+
 
   return (
     <div className={styles.main}>
@@ -45,32 +52,22 @@ const Sub03_1 = () => {
           <div className={styles.MyName}>
             <b>{name}</b> {/* Use the name variable */}
           </div>
-          <div className={styles.SponAmount}>누적후원금 {money}원</div>
+          <div className={styles.SponAmount}>{`누적후원금 ${money}원`}</div>
         </div>
       </div>
       <hr />
       <div className={styles.ListHeadTxt}>
         <b>후원중인새싹들</b>
       </div>
-      <div className={styles.Sponsored}>
-        <div className={styles.SponsoredImgSpace}>
-          <img src={sponsored1} className={styles.SponsoredPhoto} />
-        </div>
-        <div className={styles.SponsoredInfo}>
-          <div className={styles.InfoDiv}>
-            <b>오수연</b>
-            <br />
-            후원시작일 : 20203.07.02.
-            <br />월 후원금액 : 20,000원
-          </div>
-        </div>
-      </div>
-      <hr className={styles.BetweenSponsored} />
-      <div className={styles.Sponsored}></div>
-      <div div className={styles.footerDiV}>
+      {
+        donatees.map((child) => (
+          <SpoonedChild child={child}></SpoonedChild>
+        ))
+      }
+      <div className={styles.footerDiV} >
         <Footer></Footer>
       </div>
-    </div>
+    </div >
   );
 };
 

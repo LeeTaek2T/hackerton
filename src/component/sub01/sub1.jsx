@@ -12,73 +12,10 @@ import Child from '../child/child';
 import axios from 'axios';
 import childImg1 from '../../source/jaechan.png';
 import upArrow from '../../source/upArrow.png';
-import subTwo_1 from '../../source/sub1/sub1_1_1.png';
-import subTwo_2 from '../../source/sub1/sub1_2_1.png';
-import subTwo_3 from '../../source/sub1/sub1_3_1.png';
-import subTwo_4 from '../../source/sub1/sub1_4_1.png';
-import subTwo_5 from '../../source/sub1/sub1_5_1.png';
-import subTwo_6 from '../../source/sub1/sub1_6_1.png';
-import subTwo_7 from '../../source/sub1/sub1_7_1.png';
-import subTwo_8 from '../../source/sub1/sub1_8_1.png';
-import subTwo_9 from '../../source/sub1/sub1_9_1.png';
-import subTwo_10 from '../../source/sub1/sub1_10_1.png';
-import subTwo_11 from '../../source/sub1/sub1_10_1.png';
 
 const Sub1 = () => {
   const navigate = useNavigate();
 
-  // const toSubOne_two = (value, childData) => {
-  //     let pathname;
-  //     let CD = childData;
-  //     switch (value) {
-  //         case 1:
-  //             pathname = "/sub1m1/sub1m1_1";
-  //             break;
-  //         case 2:
-  //             pathname = "/sub1m1/sub1m1_2";
-  //             break;
-  //         case 3:
-  //             pathname = "/sub1m1/sub1m1_3";
-  //             break;
-  //         case 4:
-  //             pathname = "/sub1m1/sub1m1_4";
-  //             break;
-  //         case 5:
-  //             pathname = "/sub1m1/sub1m1_5";
-  //             break;
-  //         case 6:
-  //             pathname = "/sub1m1/sub1m1_6";
-  //             break;
-  //         case 7:
-  //             pathname = "/sub1m1/sub1m1_7";
-  //             break;
-  //         case 8:
-  //             pathname = "/sub1m1/sub1m1_8";
-  //             break;
-  //         case 9:
-  //             pathname = "/sub1m1/sub1m1_9";
-  //             break;
-  //         case 10:
-  //             pathname = "/sub1m1/sub1m1_10";
-  //             break;
-  //         case 11:
-  //             pathname = "/sub1m1/sub1m1_11";
-  //             break;
-  //     }
-  //     if (pathname) {
-  //         navigate({
-  //             pathname: pathname,
-  //             state: 'dfsa'
-  //         });
-  //     }
-  //     console.log(`pathname : ${pathname}, childData :${CD.title}`)
-  // };
-
-  // const toSubOne_two = (value) => {
-  //     navigate({
-  //         pathname: '/sub1m2',
-  //     });
-  // };
   const toMain = () => {
     navigate({
       pathname: '/',
@@ -174,16 +111,15 @@ const Sub1 = () => {
           selectedCondition.includes(child.condition))
       );
     });
-    // console.log(filteredData);
-    // console.log(childrenData);
-
     setFilteredData(filteredData);
+  };
 
-    // 선택된 필터 초기화
+  const setFilter = () => {
     setSelectedGender([]);
     setSelectedAgeRange([]);
     setSelectedCondition([]);
-  };
+    setFilteredData(childrenData);
+  }
 
   const [dataAll, setDataAll] = useState();
   useEffect(() => {
@@ -308,7 +244,7 @@ const Sub1 = () => {
           ];
           // 아이 정보에 이미지 URL 배열 추가
           item.imgOne = URLs[index % URLs.length]; // 이미지 URL을 순환하도록 설정
-          item.imgTwo = URLs[index % URLs2.length]; // 이미지 URL을 순환하도록 설정
+          item.imgTwo = URLs2[index % URLs2.length]; // 이미지 URL을 순환하도록 설정
           item.STOne = STOne[index % STOne.length];
           item.STTwo = STTwo[index % STTwo.length];
           item.STTHree = STThree[index % STThree.length];
@@ -418,7 +354,7 @@ const Sub1 = () => {
                     </button>
                     <button
                       onClick={() => handleButtonClick('ageRange', '13~18')}
-                      className={`${styles.age} ${isAgeRangeSelected('0~3')}`}
+                      className={`${styles.age} ${isAgeRangeSelected('13~18')}`}
                     >
                       13~18세
                     </button>
@@ -523,7 +459,10 @@ const Sub1 = () => {
                     </div>
                   </div>
                 </div>
-                <button onClick={handleApplyFilter}>적용</button>
+                <div className={styles.applyDiv}>
+                  <button className={styles.applyBtn} onClick={handleApplyFilter}>적용</button>
+                  <button className={styles.setBtn} onClick={setFilter}>초기화</button>
+                </div>
               </div>
             </div>
           )}

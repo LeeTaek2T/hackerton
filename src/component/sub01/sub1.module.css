@@ -156,6 +156,22 @@
   margin: 1% 1% 3% 1%;
 }
 
+.applyBtn {
+  background-color: #cbffa3;
+  font-size: large;
+  font-weight: bold;
+  margin: 1.2% 1% 4% 6%;
+  border-radius: 10%;
+}
+
+.setBtn {
+  background-color: #cbffa3;
+  font-size: large;
+  font-weight: bold;
+  margin: 1.2% 0% 4% 1%;
+  border-radius: 10%;
+}
+
 .selectedGender {
   background-color: gray;
   border: 1px black solid;
