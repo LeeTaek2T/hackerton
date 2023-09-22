@@ -50,7 +50,6 @@ const Sub03_1 = () => {
         </div>
         <div className={styles.MyInfo}>
           <div className={styles.MyName}>
-            <b>{name}</b> {/* Use the name variable */}
           </div>
           <div className={styles.SponAmount}>{`누적후원금 ${money}원`}</div>
         </div>
