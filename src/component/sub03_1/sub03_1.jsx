@@ -63,7 +63,7 @@ const Sub03_1 = () => {
       </div>
       {
         donatees.map((child) => (
-          <SpoonedChild child={child}></SpoonedChild>
+          <SpoonedChild key={child.name} child={child}></SpoonedChild>
         ))
       }
       <div className={styles.footerDiV} >
