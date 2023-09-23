@@ -14,7 +14,7 @@ import subOne_11 from '../../source/sub1/sub1_11.png';
 
 const SpoonedChild = ({ child }) => {
     let imgSrc = '';
-    console.log(child.data);
+    // console.log(child.data);
     switch (child.imgOne) {
         case 1:
             imgSrc = subOne_1;

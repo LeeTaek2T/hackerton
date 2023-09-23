@@ -39,7 +39,7 @@ const Sub03_1 = () => {
         const responseDataArray = Array.isArray(response.data)
           ? response.data
           : [response.data];
-        console.log(response.data);
+        // console.log(response.data);
         responseDataArray.forEach((item, index) => {
           // if (typeof item === 'object') { // 객체인 경우에만 처리
           //   const URLs = [
