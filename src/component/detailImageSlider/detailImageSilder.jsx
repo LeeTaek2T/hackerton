@@ -79,7 +79,7 @@ const DetailImageSlider = ({ imgData }) => {
                         <img src={imgSrc1} className={styles.detailImg} alt="이미지 1" />
                     </div>
                 </div>
-                <div className={styles.imgDiv}>
+                {/* <div className={styles.imgDiv}>
                     <div className={styles.centerImg}>
                         <img src={imgSrc1} className={styles.detailImg} alt="이미지 2" />
                     </div>
@@ -88,7 +88,7 @@ const DetailImageSlider = ({ imgData }) => {
                     <div className={styles.centerImg}>
                         <img src={imgSrc1} className={styles.detailImg} alt="이미지 3" />
                     </div>
-                </div>
+                </div> */}
             </Slider>
         </div>
     );
