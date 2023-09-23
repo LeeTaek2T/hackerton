@@ -249,7 +249,7 @@ const Sub1 = () => {
             item.imgTwo = URLs2[index % URLs2.length]; // 이미지 URL을 순환하도록 설정
             item.STOne = STOne[index % STOne.length];
             item.STTwo = STTwo[index % STTwo.length];
-            item.STTHree = STThree[index % STThree.length];
+            item.STThree = STThree[index % STThree.length];
             item.SDOne = SDOne[index % SDOne.length];
             item.SDTwo = SDTwo[index % SDTwo.length];
             item.SDThree = SDThree[index % SDThree.length];
