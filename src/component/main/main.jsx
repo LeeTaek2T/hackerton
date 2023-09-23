@@ -9,6 +9,7 @@ import arrow from '../../source/arrow.png';
 import chOImg from '../../source/main2.png';
 import chTImg from '../../source/main3.png';
 import chThImg from '../../source/main4.png';
+
 import reportImg from '../../source/main5.png';
 
 const Main = () => {

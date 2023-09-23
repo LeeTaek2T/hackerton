@@ -7,6 +7,9 @@ import mainTwo from '../../source/main2.png';
 import mainThree from '../../source/main3.png';
 import mainFour from '../../source/main4.png';
 import mainFive from '../../source/main5.png';
+import mainSix from '../../source/main6.png';
+import mainSeven from '../../source/main7.png';
+
 import styles from './imageSlider.module.css';
 
 const ImageSlider = () => {
@@ -32,12 +35,12 @@ const ImageSlider = () => {
         </div>
         <div className={styles.imgDiv}>
           <div className={styles.centerImg}>
-            <img src={mainOne} className={styles.mainImg} alt="이미지 2" />
+            <img src={mainSix} className={styles.mainImg} alt="이미지 2" />
           </div>
         </div>
         <div className={styles.imgDiv}>
           <div className={styles.centerImg}>
-            <img src={mainOne} className={styles.mainImg} alt="이미지 3" />
+            <img src={mainSeven} className={styles.mainImg} alt="이미지 3" />
           </div>
         </div>
       </Slider>
