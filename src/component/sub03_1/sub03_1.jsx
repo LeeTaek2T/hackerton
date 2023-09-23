@@ -9,8 +9,6 @@ import SpoonedChild from './spoonedChild';
 
 const Sub03_1 = () => {
   const [donatees, setDonatees] = useState([]);
-
-
   const [money, setMoney] = useState(0); // money 상태 변수 초기값 설정
   const [name, setName] = useState(''); // name 상태 변수 초기값 설정
 

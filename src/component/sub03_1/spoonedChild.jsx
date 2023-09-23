@@ -16,37 +16,37 @@ const SpoonedChild = ({ child }) => {
     let imgSrc = '';
     console.log(child.data);
     switch (child.imgOne) {
-        case 0:
+        case 1:
             imgSrc = subOne_1;
             break;
-        case 1:
+        case 2:
             imgSrc = subOne_2;
             break;
-        case 2:
+        case 3:
             imgSrc = subOne_3;
             break;
-        case 3:
+        case 4:
             imgSrc = subOne_4;
             break;
-        case 4:
+        case 5:
             imgSrc = subOne_5;
             break;
-        case 5:
+        case 6:
             imgSrc = subOne_6;
             break;
-        case 6:
+        case 7:
             imgSrc = subOne_7;
             break;
-        case 7:
+        case 8:
             imgSrc = subOne_8;
             break;
-        case 8:
+        case 9:
             imgSrc = subOne_9;
             break;
-        case 9:
+        case 10:
             imgSrc = subOne_10;
             break;
-        case 10:
+        case 11:
             imgSrc = subOne_11;
             break;
         default:
