@@ -15,37 +15,37 @@ import subOne_11 from '../../source/sub1/sub1_11.png';
 const SpoonedChild = ({ child }) => {
     let imgSrc = '';
     switch (child.imgOne) {
-        case 'subOne_1':
+        case 0:
             imgSrc = subOne_1;
             break;
-        case 'subOne_2':
+        case 1:
             imgSrc = subOne_2;
             break;
-        case 'subOne_3':
+        case 2:
             imgSrc = subOne_3;
             break;
-        case 'subOne_4':
+        case 3:
             imgSrc = subOne_4;
             break;
-        case 'subOne_5':
+        case 4:
             imgSrc = subOne_5;
             break;
-        case 'subOne_6':
+        case 5:
             imgSrc = subOne_6;
             break;
-        case 'subOne_7':
+        case 6:
             imgSrc = subOne_7;
             break;
-        case 'subOne_8':
+        case 7:
             imgSrc = subOne_8;
             break;
-        case 'subOne_9':
+        case 8:
             imgSrc = subOne_9;
             break;
-        case 'subOne_10':
+        case 9:
             imgSrc = subOne_10;
             break;
-        case 'subOne_11':
+        case 10:
             imgSrc = subOne_11;
             break;
         default:

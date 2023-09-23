@@ -43,22 +43,22 @@ const Sub03_1 = () => {
           : [response.data];
         console.log(response.data);
         responseDataArray.forEach((item, index) => {
-          if (typeof item === 'object') { // 객체인 경우에만 처리
-            const URLs = [
-              'subOne_1',
-              'subOne_2',
-              'subOne_3',
-              'subOne_4',
-              'subOne_5',
-              'subOne_6',
-              'subOne_7',
-              'subOne_8',
-              'subOne_9',
-              'subOne_10',
-              'subOne_11',
-            ]
-            item.imgOne = URLs[index % URLs.length]; // 이미지 URL을 순환하도록 설정
-          }
+          // if (typeof item === 'object') { // 객체인 경우에만 처리
+          //   const URLs = [
+          //     'subOne_1',
+          //     'subOne_2',
+          //     'subOne_3',
+          //     'subOne_4',
+          //     'subOne_5',
+          //     'subOne_6',
+          //     'subOne_7',
+          //     'subOne_8',
+          //     'subOne_9',
+          //     'subOne_10',
+          //     'subOne_11',
+          //   ]
+          //   item.imgOne = URLs[index % URLs.length]; // 이미지 URL을 순환하도록 설정
+          // }
         })
         setDonatees(responseDataArray);
       })
