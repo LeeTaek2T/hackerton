@@ -62,7 +62,7 @@ const SpoonedChild = ({ child }) => {
                     <div className={styles.InfoDiv}>
                         <b className={styles.name}>{child.name}</b>
                         <br className={styles.detail} />
-                        {`후원 시작일 : ${child.date}`}
+                        {`후원 시작일 : ${child.date}.`}
                         <br />{`월 후원금액 : ${child.money}원`}
                     </div>
                 </div>
