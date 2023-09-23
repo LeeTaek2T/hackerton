@@ -51,7 +51,6 @@ const Sub03_1 = () => {
             item.imgOne = URLs[index % URLs.length]; // 이미지 URL을 순환하도록 설정
           }
         })
-        setMoney(testMoney);
         setDonatees(responseDataArray);
       })
   }, []);
@@ -71,7 +70,7 @@ const Sub03_1 = () => {
         </div>
         <div className={styles.MyInfo}>
           <div className={styles.MyName}>
-            <b className={styles.titl}>{name}</b>
+            <b>{name}</b>
           </div>
           <div className={styles.SponAmount}>{`누적후원금 ${money}원`}</div>
         </div>
