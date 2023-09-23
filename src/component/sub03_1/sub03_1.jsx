@@ -84,7 +84,7 @@ const Sub03_1 = () => {
       </div>
       <hr />
       <div className={styles.ListHeadTxt}>
-        <b className={styles.ti}>후원중인새싹들</b>
+        <b className={styles.ti}>후원중인 새싹들</b>
       </div>
       {
         donatees.map((child) => (
