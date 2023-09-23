@@ -13,13 +13,17 @@ const Sub03_1 = () => {
   let testMoney = 0;
   useEffect(() => {
     axios
-      .get('/api/donators/1/donatees')
+      .get('https://port-0-donation-backend-2rrqq2blmpwenmp.sel5.cloudtype.app/api/donators/1/donatees')
       .then((response) => {
         // setDonatees(response.data);
         const responseDataArray = Array.isArray(response.data)
           ? response.data
           : [response.data];
         responseDataArray.forEach((item, index) => {
+
+
+
+
 
           if (typeof item === 'object') { // 객체인 경우에만 처리
             testMoney += item.money;

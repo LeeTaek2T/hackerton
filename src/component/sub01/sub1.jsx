@@ -125,7 +125,7 @@ const Sub1 = () => {
   useEffect(() => {
     // 페이지 로딩 시 모든 정보를 가져오는 부분
     axios
-      .get('api/benefs?keyword=')
+      .get('https://port-0-donation-backend-2rrqq2blmpwenmp.sel5.cloudtype.app/api/benefs?keyword=')
       .then((response) => {
         // console.log(`버튼 눌러 백엔드 연결 성공 완료`);
         // console.log(`${response.data}`);

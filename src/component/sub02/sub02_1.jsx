@@ -27,8 +27,7 @@ const Sub02_1 = () => {
     );
 
     // API URL을 구성합니다.
-    const apiUrl = `${currentPathname}/api/donators/1/benefs/${id}/addDonatee?money=${howmuch}`;
-
+    const apiUrl = `https://port-0-donation-backend-2rrqq2blmpwenmp.sel5.cloudtype.app${currentPathname}/api/donators/1/benefs/${id}/addDonatee?money=${howmuch}`;
     try {
       const response = await axios.put(apiUrl);
 
@@ -42,6 +41,7 @@ const Sub02_1 = () => {
       alert('API 호출 오류');
     }
   };
+
   return (
     <div className={styles.main}>
       <Header></Header>
