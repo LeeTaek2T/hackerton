@@ -3,7 +3,7 @@ body {
 }
 
 .main {
-  padding-bottom: 20%;
+  padding-bottom: 25%;
 }
 
 .headerDiv {
@@ -152,9 +152,6 @@ hr {
   font-size: larger;
 }
 
-.titl {
-  font-size: large;
-}
 
 .ti {
   font-size: large;
