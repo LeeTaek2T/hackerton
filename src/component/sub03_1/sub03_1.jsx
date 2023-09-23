@@ -20,16 +20,10 @@ const Sub03_1 = () => {
           ? response.data
           : [response.data];
         responseDataArray.forEach((item, index) => {
-
-
-
-
-
           if (typeof item === 'object') { // 객체인 경우에만 처리
             testMoney += item.money;
             console.log(item.money);
             console.log(`money : ${money}`);
-
             const URLs = [
               'subOne_1',
               'subOne_5',
