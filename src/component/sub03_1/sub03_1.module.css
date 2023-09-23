@@ -3,7 +3,7 @@ body {
 }
 
 .main {
-  margin-bottom: 20%;
+  padding-bottom: 20%;
 }
 
 .headerDiv {
@@ -146,4 +146,16 @@ hr {
   background-color: white;
   vertical-align: middle;
   text-align: left;
+}
+
+.title {
+  font-size: larger;
+}
+
+.titl {
+  font-size: large;
+}
+
+.ti {
+  font-size: large;
 }

@@ -22,12 +22,11 @@ const SpoonedChild = ({ child }) => {
                 </div>
                 <div className={styles.SponsoredInfo}>
                     <div className={styles.InfoDiv}>
-                        <b>{child.name}</b>
-                        <br />
+                        <b className={styles.name}>{child.name}</b>
+                        <br className={styles.detail} />
                         {`후원 시작일 : ${child.date}`}
                         <br />{`월 후원금액 : ${child.money}원`}
                     </div>
-                    <button className={styles.LetterButton}>후원 변경</button>
                 </div>
             </div >
             <hr className={styles.BetweenSponsored} />
